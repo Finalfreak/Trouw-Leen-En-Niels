@@ -37,7 +37,7 @@ html{ font-size: 100%; height: 100%; overflow-x: hidden;margin: 0px;  padding: 0
 
 body{ font-size: 16px; font-family: 'Bitter', serif; width: 100%; height: 100%; margin: 0; font-weight: 400;
 	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-wrap: break-word; 
-	color: #333; }
+	color: #333; background: rgb(204, 203, 198)}
 
 h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, inpot, button{ margin: 0; padding: 0; }
 
@@ -172,18 +172,25 @@ b.light-color{ color: #444; }
 3. MENU
 --------------------------------- */
 
-@media (max-width: 660px)
-.contact-area-header {
-    height: 122px;
-}
-
 .contact-area-header {
     height: 278px;
     background-image: url(../../images/Aftellen.png);
     background-size: cover;
 }
 
+@media screen and (max-width: 660px) {
+    .contact-area-header {
+        height: 122px;
+    }
+}
+
 header{ position: absolute; left: 0; right: 0; top: 20px; z-index: 1000; font-size: .95em; color: #fff; }
+
+@media only screen and (max-width: 767px) {
+    header {
+        border-bottom: none !important;
+    }
+}
 
 	
 /* MIDDLE AREA */
@@ -263,7 +270,29 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 5. CONTACT AREA
 --------------------------------- */
 
-.contact-area{ position: relative; z-ind§ex: 1; margin:auto; margin-top: -100px;}
+.contact-area {
+    text-align: center;
+}
+
+.contact-area iframe {
+    border: none;         /* Reset default border */
+    height: 98vh;        /* Viewport-relative units */
+    width: 660px;
+    margin-top: -278px;
+    padding-top: 178px;
+}
+
+@media screen and (max-width: 660px) {
+    .contact-area iframe {
+        border: none;         /* Reset default border */
+        height: 98vh;        /* Viewport-relative units */
+        width: 100%;
+        margin-top: -122px;
+        padding-top: 80px;
+    }
+}
+
+.contact-area{ position: relative; z-index: 1;}
 
 .contact-area:after{ content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;
 	opacity: .8; background: rgb(204, 203, 198)}
