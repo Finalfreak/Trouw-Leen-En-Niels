@@ -172,6 +172,17 @@ b.light-color{ color: #444; }
 3. MENU
 --------------------------------- */
 
+@media (max-width: 660px)
+.contact-area-header {
+    height: 122px;
+}
+
+.contact-area-header {
+    height: 278px;
+    background-image: url(../../images/Aftellen.png);
+    background-size: cover;
+}
+
 header{ position: absolute; left: 0; right: 0; top: 20px; z-index: 1000; font-size: .95em; color: #fff; }
 
 	
@@ -252,7 +263,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 5. CONTACT AREA
 --------------------------------- */
 
-.contact-area{ position: relative; z-ind§ex: 1;}
+.contact-area{ position: relative; z-ind§ex: 1; margin:auto; margin-top: -100px;}
 
 .contact-area:after{ content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;
 	opacity: .8; background: rgb(204, 203, 198)}
