@@ -1,0 +1,41 @@
+.map-section{
+    padding: 30px 0 30px;
+}
+
+.help-tip{
+    position: absolute;
+    top: 0px;
+    right: 18px;
+    text-align: center;
+    background-color: #BCDBEA;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 26px;
+    cursor: default;
+}
+
+.help-tip:before{
+    content:'?';
+    font-weight: bold;
+    color:#fff;
+}
+
+.help-tip:hover p{
+    display:block;
+    transform-origin: 100% 0%;
+
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.container a {
+    color: #f795a4;
+    text-decoration: underline;
+}
+
+.wedding-details img {
+    width: 55px;
+    height: 55px;
+}
